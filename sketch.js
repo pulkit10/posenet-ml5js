@@ -34,11 +34,11 @@ function draw(){
 
     if(singlePose){
         for(let i=0; i<singlePose.keypoints.length; i++){
-            ellipse(singlePose.keypoints[i].position.x, singlePose.keypoints[i].position.y, 20); 
+            ellipse(singlePose.keypoints[i].position.x, singlePose.keypoints[i].position.y, 10); 
         }
 
         stroke(255, 255, 255); 
-        strokeWeight(5);
+        strokeWeight(3);
         for(let j=0; j<skeleton.length; j++){
             line(skeleton[j][0].position.x, skeleton[j][0].position.y, skeleton[j][1].position.x, skeleton[j][1].position.y);
         }
